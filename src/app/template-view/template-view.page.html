@@ -13,7 +13,7 @@
       </div>
       <div class="custom-filed" *ngIf="template?.description">
         <ion-label position="fixed"> {{'LABELS.OBJECTIVE' | translate}} : </ion-label>
-        {{template?.description}}
+        {{template?.goal ? template?.goal :template?.description }}
       </div>
       <div class="custom-filed" *ngIf="template?.duration">
         <ion-label position="fixed"> {{'LABELS.DURATION' | translate}} : </ion-label>

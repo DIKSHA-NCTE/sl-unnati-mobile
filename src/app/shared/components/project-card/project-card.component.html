@@ -23,7 +23,7 @@
           {{'LABELS.OBJECTIVE'| translate}}
         </ion-col>
         <ion-col size="8" class="val-box">
-          {{project?.description}}
+          {{project?.goal ? project?.goal : project?.description}}
         </ion-col>
       </ion-row>
       <ion-row *ngIf="project.noOfRatings">
