@@ -1,22 +1,70 @@
-@import'../../theme/colors.scss';
+.filter-container {
+  display: flex;
+  align-items: center;
+  .filter-icon {
+    font-size: 1em;
+    padding: 0 5px;
+    display: flex;
+  }
+}
 
-.report-card
-{
-    font-size: 30px;
-    color: $black-color;
-    margin-top: 5%;
-    background:$dark-grey-color;
-    ion-card-content
-    {
-        padding-inline-start: 10px !important;
-        color: $black-color;
+.overview-container {
+  .overview-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .filter-download-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
-    ion-col,ion-row,ion-grid{
-        padding: 0px !important;
+  }
+}
+
+.project-overview-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card {
+    width: 49%;
+    background-color: #8080801c;
+    display: flex;
+    padding: 12px 0px;
+    margin: 2px 0;
+    .card-image {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      img {
+        height: 20px;
+        width: 20px;
+      }
     }
-    ion-icon
-    {
-        font-size: 30px;
-        margin-top: 35%;
-    } 
+    .card-content {
+      flex: 1;
+      margin-left: 22px;
+      .content-heading {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.task-overview-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.overview-footer {
+  .view-option {
+    display: flex;
+    justify-content: center;
+    ion-button {
+      --border-color: white;
+      color: blue;
+    }
+  }
 }
