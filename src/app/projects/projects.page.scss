@@ -1,94 +1,73 @@
 @import'../../theme/colors.scss';
 
-.ion-color.sc-ion-searchbar-md-h .searchbar-input.sc-ion-searchbar-md
-{
-    border-radius: 20px !important;
-}
-.searchbar-search-icon .sc-ion-searchbar-md {
-    right: 16px;
-    top: 11px;
-    width: 21px;
-    height: 21px;
-}
-* {
-    box-sizing: border-box;
-  }
-
-ion-tab-button {
-    ion-label {
-        font-size:16px;
-    }
-}
-.project-card
-{
-  background: $light;
+.project-card {
+  background: $light-grey-color;
   font-size: 18px;
   color: $black-color;
   font-weight: 600;
-  ion-card-header{
-        background: $light;
-        font-size: 18px;
-        color: $black-color;
-        font-weight: 600;
-          ion-icon{
-            float: right;
-        }
-  }
- ion-card-content{
-    padding: 0px;
- }
-  .inner-card
-  {
-    background: $white-color;
-    padding:0px;
-    margin:0px;
-    ion-icon{
-      float: right;
-    }
-    ion-card-content{
-    background: $white-color;
-    padding: 10px;
+
+  ion-card-header {
+    background: $light-grey-color;
     font-size: 18px;
     color: $black-color;
     font-weight: 600;
-    border-bottom: 1px solid $grey-color;
-        ion-icon{
-          float: right;
-        }
+
+    ion-icon {
+      float: right;
+    }
+  }
+
+  ion-card-content {
+    padding: 0px;
+  }
+
+  .inner-card {
+    background: $white-color;
+    padding: 0px;
+    margin: 0px;
+
+    ion-icon {
+      float: right;
+    }
+
+    ion-card-content {
+      background: $white-color;
+      padding: 10px;
+      font-size: 18px;
+      color: $black-color;
+      font-weight: 600;
+      border-bottom: 1px solid $light-grey-color;
+
+      ion-icon {
+        float: right;
+      }
     }
   }
 }
-.custom-arrow{
-        margin: auto;
-        color:$black-color;
-        font-size:22px;
-        text-align: end;
-        font-weight: 600;
-        text-align: right;
-}
-.custom-card
-{
-  margin: 0px;
-  background:$white-color;
-  ion-card-content{
-  padding: 0px;
-  font-size: 16px;
-  color: $dark-grey-color;
-  }
-}
-.custom-tab{
-  max-width: 50%;
-  min-width: 50%;
-  background:$white-color;
+
+.custom-arrow {
+  margin: auto;
   color: $black-color;
-    float: left;
-    padding: 15px;
-    text-align: center;
-    font-size: 18px;
-    border-bottom: 2px solid $primary;
-    font-weight: 600;
+  font-size: 22px;
+  text-align: end;
+  font-weight: 600;
+  text-align: right;
 }
-.active-tab{
-  background: $primary;
-  color: $white-color;
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.expand {
+  font-size: 20px;
+  padding-right: 20px;
+  color: var(--ion-color-primary);
+}
+
+.bgList {
+  background-color: $light-grey-color;
+}
+
+.listHeader {
+  --background:  #f2efef
 }
